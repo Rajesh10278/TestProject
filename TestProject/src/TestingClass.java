@@ -4,6 +4,12 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 public class TestingClass {
+	
+	@Test
+	public void multipleOfThreeAndFive() {
+	     ValueReturned p= new ValueReturned();
+	     Assert.assertEquals("FizzBuzz", p.convert(15));
+	}
 
 	@Test
 	public void multipleOfThree() {
@@ -15,12 +21,6 @@ public class TestingClass {
 	public void multipleOfFive() {
 	     ValueReturned p= new ValueReturned();
 	     Assert.assertEquals("Buzz", p.convert(5));
-	}
-	
-	@Test
-	public void multipleOfThreeAndFive() {
-	     ValueReturned p= new ValueReturned();
-	     Assert.assertEquals("FizzBuzz", p.convert(15));
 	}
 
 }
