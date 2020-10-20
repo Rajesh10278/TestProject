@@ -49,6 +49,7 @@ public class TestingClass {
 		   else {
 			   str=String.valueOf(i);
 		   }
+		   System.out.println(str);
 		   Assert.assertEquals(str, p.convert(i));
 	   }
 	}
