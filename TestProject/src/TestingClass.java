@@ -22,5 +22,12 @@ public class TestingClass {
 	     ValueReturned p= new ValueReturned();
 	     Assert.assertEquals("Buzz", p.convert(5));
 	}
-
+	
+	@Test
+	public void normalNumber() {
+	     ValueReturned p= new ValueReturned();
+	     Assert.assertEquals("1", p.convert(1));
+	     Assert.assertEquals("2", p.convert(2));
+	}
+    
 }
