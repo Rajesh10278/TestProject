@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 public class TestingClass {
 
 	@Test
-	public void fizzBuzzNumber() {
+	public void multipleOfThree() {
 	     ValueReturned p= new ValueReturned();
-	     Assert.assertEquals("1", p.convert(1));
+	     Assert.assertEquals("Fizz", p.convert(3));
 	}
 
 }
