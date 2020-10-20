@@ -16,5 +16,11 @@ public class TestingClass {
 	     ValueReturned p= new ValueReturned();
 	     Assert.assertEquals("Buzz", p.convert(5));
 	}
+	
+	@Test
+	public void multipleOfThreeAndFive() {
+	     ValueReturned p= new ValueReturned();
+	     Assert.assertEquals("FizzBuzz", p.convert(15));
+	}
 
 }

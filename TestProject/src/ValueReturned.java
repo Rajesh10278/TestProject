@@ -12,6 +12,10 @@ public class ValueReturned {
 			
 			return "Buzz";
 		}
+        if(num%5==0 && num%3==0) {
+			
+			return "FizzBuzz";
+		}
         return String.valueOf(num);
 	}
 	
