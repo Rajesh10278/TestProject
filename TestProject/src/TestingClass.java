@@ -29,5 +29,28 @@ public class TestingClass {
 	     Assert.assertEquals("1", p.convert(1));
 	     Assert.assertEquals("2", p.convert(2));
 	}
+	
+	@Test
+	public void testAll() {
+		
+	   ValueReturned p= new ValueReturned();
+	   String str;
+	   for(int i=1;i<=100;i++) {
+		   
+		   if(i%3==0 && i%5==0) {
+			   str="FizzBuzz";		  
+		   }
+		   else if(i%3==0) {
+			   str="Fizz";
+		   }
+		   else if(i%5==0) {
+			   str="Buzz";
+		   }
+		   else {
+			   str=String.valueOf(i);
+		   }
+		   Assert.assertEquals(str, p.convert(i));
+	   }
+	}
     
 }
